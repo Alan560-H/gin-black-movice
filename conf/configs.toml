@@ -1,0 +1,59 @@
+[mysql]
+  [mysql.read]
+    # 服务器地址
+    hostname = "47.122.120.243"
+    # 端口 默认3306
+    hostport = "3306"
+    # 用户名
+    username = "root"
+    # 密码
+    password = "1q2w3e4ra"
+
+  [mysql.write]
+    # 服务器地址
+    hostname = "47.122.120.243"
+    # 端口 默认3306
+    hostport = "3306"
+    # 用户名
+    username = "root"
+    # 密码
+    password = "1q2w3e4ra"
+
+  [mysql.base]
+    maxOpenConn = 10
+    maxIdleConn = 60
+    connMaxLifeTime = 60  # 单位为秒
+
+[redis]
+  # 服务器地址
+  hostname = "47.122.120.243"
+  # 端口 默认6379
+  hostport = "6379"
+  # 用户名
+  username = ""
+  # 密码
+  password = ""
+  maxRetries = 3
+  poolSize = 10
+  minIdleConns = 5
+
+[language]
+  local = "zh-cn"
+
+[jwt]
+  secret = "123"
+  jwt_ttl = 43200  # 单位为秒
+
+[app]
+  # 版本号
+  version = "1.0.0"
+  # 环境状态：dev=开发，pro=生产
+  env = "dev"
+  # 运行服务端口（根据您的实际情况修改）
+  port = 8000
+  # 页大小
+  page_size = 10
+  # 读取超时
+  read_timeout = 60
+  # 写入超时
+  write_timeout = 60
